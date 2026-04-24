@@ -1,0 +1,24 @@
+<svg width="1600" height="960" viewBox="0 0 1600 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="120" x2="1420" y2="880" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6B1A1D"/>
+      <stop offset="1" stop-color="#4B403C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="960" rx="48" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#FFF8F2">
+    <path d="M0 210H1600"/>
+    <path d="M0 460H1600"/>
+    <path d="M0 710H1600"/>
+    <path d="M320 0V960"/>
+    <path d="M800 0V960"/>
+    <path d="M1280 0V960"/>
+  </g>
+  <rect x="250" y="360" width="220" height="140" rx="22" stroke="#D8B58E" stroke-width="8"/>
+  <rect x="510" y="360" width="220" height="140" rx="22" stroke="#D8B58E" stroke-width="8"/>
+  <rect x="770" y="360" width="220" height="140" rx="22" stroke="#D8B58E" stroke-width="8"/>
+  <path d="M1140 280V590" stroke="#FFF8F2" stroke-opacity="0.7" stroke-width="12" stroke-linecap="round"/>
+  <path d="M1140 590H1350" stroke="#FFF8F2" stroke-opacity="0.7" stroke-width="12" stroke-linecap="round"/>
+  <text x="124" y="804" fill="#FFF8F2" font-family="Arial, sans-serif" font-size="26" letter-spacing="3">PLACEHOLDER / MEDIA</text>
+  <text x="124" y="846" fill="#D8B58E" font-family="Arial, sans-serif" font-size="52" font-weight="700">page-products-parking</text>
+</svg>

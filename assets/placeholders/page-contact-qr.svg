@@ -1,0 +1,44 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="28" fill="#F3EADC" />
+  <rect x="22" y="22" width="196" height="196" rx="20" fill="#FFF8EF" />
+  <rect x="38" y="38" width="52" height="52" rx="10" fill="#15171C" />
+  <rect x="50" y="50" width="28" height="28" rx="6" fill="#FFF8EF" />
+  <rect x="150" y="38" width="52" height="52" rx="10" fill="#15171C" />
+  <rect x="162" y="50" width="28" height="28" rx="6" fill="#FFF8EF" />
+  <rect x="38" y="150" width="52" height="52" rx="10" fill="#15171C" />
+  <rect x="50" y="162" width="28" height="28" rx="6" fill="#FFF8EF" />
+  <rect x="104" y="38" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="124" y="38" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="104" y="58" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="124" y="58" width="14" height="14" rx="3" fill="#C45B3C" />
+  <rect x="104" y="78" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="124" y="78" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="104" y="104" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="124" y="104" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="144" y="104" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="164" y="104" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="184" y="104" width="14" height="14" rx="3" fill="#C45B3C" />
+  <rect x="104" y="124" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="124" y="124" width="14" height="14" rx="3" fill="#FFF8EF" />
+  <rect x="144" y="124" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="164" y="124" width="14" height="14" rx="3" fill="#FFF8EF" />
+  <rect x="184" y="124" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="104" y="144" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="124" y="144" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="144" y="144" width="14" height="14" rx="3" fill="#C45B3C" />
+  <rect x="164" y="144" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="184" y="144" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="104" y="164" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="124" y="164" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="144" y="164" width="14" height="14" rx="3" fill="#FFF8EF" />
+  <rect x="164" y="164" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="184" y="164" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="104" y="184" width="14" height="14" rx="3" fill="#C45B3C" />
+  <rect x="124" y="184" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="144" y="184" width="14" height="14" rx="3" fill="#15171C" />
+  <rect x="164" y="184" width="14" height="14" rx="3" fill="#FFF8EF" />
+  <rect x="184" y="184" width="14" height="14" rx="3" fill="#15171C" />
+  <circle cx="120" cy="120" r="18" fill="#15171C" />
+  <path d="M120 109L127 120L120 131L113 120L120 109Z" fill="#FFF8EF" />
+  <path d="M120 111.5L125.5 120L120 128.5L114.5 120L120 111.5Z" fill="#C45B3C" />
+</svg>

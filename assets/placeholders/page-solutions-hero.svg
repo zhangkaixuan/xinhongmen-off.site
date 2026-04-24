@@ -1,0 +1,22 @@
+<svg width="1600" height="960" viewBox="0 0 1600 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="150" y1="120" x2="1450" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6B1A1D"/>
+      <stop offset="0.55" stop-color="#4F1416"/>
+      <stop offset="1" stop-color="#B88A57"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="960" rx="48" fill="url(#bg)"/>
+  <g opacity="0.16" stroke="#FFF8F2">
+    <path d="M0 180H1600"/>
+    <path d="M0 420H1600"/>
+    <path d="M0 660H1600"/>
+    <path d="M240 0V960"/>
+    <path d="M800 0V960"/>
+    <path d="M1360 0V960"/>
+  </g>
+  <path d="M180 680H520L650 560H940L1120 420H1420" stroke="#FFF8F2" stroke-opacity="0.6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M180 620H420L580 500H860L1050 340H1420" stroke="#D8B58E" stroke-width="12" stroke-linecap="round"/>
+  <text x="124" y="804" fill="#FFF8F2" font-family="Arial, sans-serif" font-size="26" letter-spacing="3">PLACEHOLDER / HERO</text>
+  <text x="124" y="846" fill="#D8B58E" font-family="Arial, sans-serif" font-size="52" font-weight="700">page-solutions-hero</text>
+</svg>

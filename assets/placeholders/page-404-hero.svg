@@ -1,0 +1,20 @@
+<svg width="1600" height="960" viewBox="0 0 1600 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="150" y1="120" x2="1450" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#221816"/>
+      <stop offset="1" stop-color="#6B1A1D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="960" rx="48" fill="url(#bg)"/>
+  <g opacity="0.14" stroke="#FFF8F2">
+    <path d="M0 180H1600"/>
+    <path d="M0 420H1600"/>
+    <path d="M0 660H1600"/>
+    <path d="M260 0V960"/>
+    <path d="M800 0V960"/>
+    <path d="M1340 0V960"/>
+  </g>
+  <text x="180" y="520" fill="#FFF8F2" font-family="Arial, sans-serif" font-size="260" font-weight="700" opacity="0.2">404</text>
+  <text x="124" y="804" fill="#FFF8F2" font-family="Arial, sans-serif" font-size="26" letter-spacing="3">PLACEHOLDER / HERO</text>
+  <text x="124" y="846" fill="#D8B58E" font-family="Arial, sans-serif" font-size="52" font-weight="700">page-404-hero</text>
+</svg>
