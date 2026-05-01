@@ -1,9 +1,9 @@
 const companyProfile = {
   company: "淮安新红门业有限公司",
   companyShort: "淮安新红门业",
-  hotline: "请替换为联系电话",
+  hotline: "131 2200 6501",
   wechat: "请替换为微信号",
-  address: "请替换为淮安市详细联系地址",
+  address: "淮安市淮阴区渔沟镇工业集中区399号",
   serviceArea: "淮安市区及周边县区项目",
 };
 
@@ -30,7 +30,7 @@ Object.entries(textBindings).forEach(([field, value]) => {
 const phoneDigits = companyProfile.hotline.replace(/[^\d+]/g, "");
 document.querySelectorAll('[data-link="hotline"]').forEach((link) => {
   if (!phoneDigits || phoneDigits === "+") {
-    link.setAttribute("href", "./contact.html");
+    link.setAttribute("href", "#contact");
     return;
   }
 
@@ -39,32 +39,45 @@ document.querySelectorAll('[data-link="hotline"]').forEach((link) => {
 
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
+const headerHeight = document.querySelector(".site-header")?.offsetHeight || 80;
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    const href = link.getAttribute("href");
+    if (href === "#" || href === "#top") {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      return;
+    }
+
+    const target = document.querySelector(href);
+    if (target) {
+      e.preventDefault();
+      const offsetTop = target.offsetTop - headerHeight;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+
+    if (siteNav) {
+      siteNav.classList.remove("is-open");
+      if (menuToggle) {
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+    }
+  });
+});
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
     const isOpen = siteNav.classList.toggle("is-open");
     menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
-
-  siteNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      siteNav.classList.remove("is-open");
-      menuToggle.setAttribute("aria-expanded", "false");
-    });
-  });
 }
-
-document.querySelectorAll(".faq-item").forEach((item) => {
-  const trigger = item.querySelector(".faq-trigger");
-  if (!trigger) {
-    return;
-  }
-
-  trigger.addEventListener("click", () => {
-    const isOpen = item.classList.toggle("is-open");
-    trigger.setAttribute("aria-expanded", String(isOpen));
-  });
-});
 
 const revealNodes = document.querySelectorAll("[data-reveal]");
 
@@ -89,4 +102,33 @@ if ("IntersectionObserver" in window) {
   revealNodes.forEach((node) => observer.observe(node));
 } else {
   revealNodes.forEach((node) => node.classList.add("is-visible"));
+}
+
+const navLinks = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'));
+const sections = navLinks
+  .map((link) => {
+    const href = link.getAttribute("href");
+    return href ? document.querySelector(href) : null;
+  })
+  .filter(Boolean);
+
+if (navLinks.length > 0 && sections.length > 0 && "IntersectionObserver" in window) {
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+          navLinks.forEach((link) => {
+            link.classList.toggle("is-current", link.getAttribute("href") === `#${id}`);
+          });
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+      rootMargin: "-80px 0px -50% 0px",
+    }
+  );
+
+  sections.forEach((section) => sectionObserver.observe(section));
 }

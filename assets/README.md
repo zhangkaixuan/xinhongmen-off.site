@@ -14,26 +14,10 @@ Recommended future media formats:
 
 ## Current placeholder slots
 
-- `page-products-hero`
-- `page-products-gates`
-- `page-products-parking`
-- `page-products-access`
-- `page-products-safety`
-- `page-products-platform`
-- `page-solutions-hero`
-- `page-solutions-factory`
-- `page-solutions-campus`
-- `page-solutions-community`
-- `page-solutions-commercial`
-- `page-cases-hero`
 - `page-home-case-factory`
 - `page-home-case-campus`
 - `page-home-case-community`
-- `page-about-hero`
-- `page-about-proof`
-- `page-contact-hero`
-- `page-contact-map`
-- `page-contact-service`
+- `page-contact-qr`
 - `page-404-hero`
 
 ## Replacement rule
