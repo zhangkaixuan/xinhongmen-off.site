@@ -132,3 +132,14 @@ if (navLinks.length > 0 && sections.length > 0 && "IntersectionObserver" in wind
 
   sections.forEach((section) => sectionObserver.observe(section));
 }
+
+const siteHeader = document.querySelector(".site-header");
+if (siteHeader) {
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY;
+    siteHeader.classList.toggle("scrolled", scrollPosition > 50);
+  };
+
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  handleScroll();
+}
