@@ -675,9 +675,10 @@ img {
 }
 
 .home-contact-item .address-single-line {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: normal;
 }
 
 .home-contact-qr-panel {
@@ -846,12 +847,24 @@ img {
 }
 
 @media (min-width: 981px) {
-  .home-contact-item strong {
+  .home-contact-item strong:not(.address-single-line) {
     white-space: nowrap;
   }
 }
 
 @media (max-width: 720px) {
+  .home-hero {
+    padding: 3.5rem 0 3rem;
+  }
+
+  .home-showcase {
+    padding: 2.5rem 0;
+  }
+
+  .home-contact {
+    padding: 3rem 0 3.5rem;
+  }
+
   .nav-wrap {
     padding: 0.85rem 0;
   }

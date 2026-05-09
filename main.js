@@ -1,20 +1,21 @@
-const companyProfile = {
+const companyInfo = {
   company: "淮安新红门业有限公司",
   companyShort: "淮安新红门业",
-  hotline: "131 2200 6501",
   wechat: "请替换为微信号",
   address: "淮安市淮阴区渔沟镇工业集中区399号",
   serviceArea: "淮安市区及周边县区项目",
 };
 
+const isWechat = /MicroMessenger/i.test(navigator.userAgent);
+
 const textBindings = {
-  company: companyProfile.company,
-  "company-short": companyProfile.companyShort,
-  hotline: companyProfile.hotline,
-  wechat: companyProfile.wechat,
-  address: companyProfile.address,
-  "service-area": companyProfile.serviceArea,
+  company: companyInfo.company,
+  "company-short": companyInfo.companyShort,
+  wechat: companyInfo.wechat,
+  address: companyInfo.address,
+  "service-area": companyInfo.serviceArea,
   year: new Date().getFullYear(),
+  "qr-tip": isWechat ? "长按二维码联系我们" : "扫码联系我们",
 };
 
 Object.entries(textBindings).forEach(([field, value]) => {
@@ -25,16 +26,6 @@ Object.entries(textBindings).forEach(([field, value]) => {
       (value.includes("请替换") || value.includes("待补充"));
     node.classList.toggle("is-placeholder-text", Boolean(isPlaceholder));
   });
-});
-
-const phoneDigits = companyProfile.hotline.replace(/[^\d+]/g, "");
-document.querySelectorAll('[data-link="hotline"]').forEach((link) => {
-  if (!phoneDigits || phoneDigits === "+") {
-    link.setAttribute("href", "#contact");
-    return;
-  }
-
-  link.setAttribute("href", `tel:${phoneDigits}`);
 });
 
 const menuToggle = document.querySelector(".menu-toggle");
